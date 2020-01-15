@@ -7,21 +7,48 @@ Most recent revision:1/11/2020
 <html lang ="en">
 	<head>
 		<title>Tanner's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			caption{
+				font-weight: bold;
+				font-size:1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table{
+				width: 90%;
+				margin: auto;
+			}
+			tr{
+				height: 30px;
+			}
+			th{
+				background-color: #546a7b;
+			}
+			tr:nth-child(odd){
+				background-color: #e4c3ad;
+			}
+		</style>
 	</head>
 
 	<body>
 		<header>
 			<h1>Portfolio for Tanner Thelen</h1>
 		</header>
-		<hr/>
-		<nav>
+		
+		<nav class="border">
 			<p><a href="projects.html">My Projects</a></p>
 			<p><a href="contact.html">Contact Me</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
+			<div class="clear-float"></div>
 		</nav>
-		<hr/>
+	
 		<section>
-			<article id="about-me">
+			<article class="border" id="about">
 				<h2><em>About Me</em></h2>
 				<img src="images/profile-pic.jpg" alt="Profile Picture" style="width: 400px;"/>
 				<p>Hello, my name is <strong>Tanner Thelen</strong>. I attended college at 
@@ -40,68 +67,78 @@ Most recent revision:1/11/2020
 		software testing(TDD). I have experience in using both Windows and Linux and have
 		worked on projects in both operating systems.
 				</p>
+				<div class="clear-float"></div>
 			</article>
 			
-			<article id="past-experiences">
+			<article id="experience">
 				<h2><em>Past Experiences</em></h2>
-				<img src="images/diploma.png" alt="Diploma Stock Image" style="width: 400px;"/>
-				<table>
-					<caption>Employment History</caption>
-					<tr>
-						<th>Years of Employment</th>
-						<th>Title</th>
-						<th>Company</th>
-					</tr>
-					<tr>
-						<td>2018</td>
-						<td>Data Research Analyst Intern</td>
-						<td>Kingland Systems</td>
-					</tr>
-					<tr>
-						<td>2013-2017</td>
-						<td>Grocery Clerk</td>
-						<td>Fareway Food Stores</td>
-					</tr>
-				</table>
+				<img src="images/diploma.png" alt="Diploma Stock Image" style="width: 300px;"/>
+				<div class="right-content">
+					<table>
+						<caption>Employment History</caption>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>	
+							<tr>
+								<td>2018</td>
+								<td>Data Research Analyst Intern</td>
+								<td>Kingland Systems</td>
+							</tr>
+							<tr>
+								<td>2013-2017</td>
+								<td>Grocery Clerk</td>
+								<td>Fareway Food Stores</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 				
 			<article id="hobbies">
 				<h2><em>Hobbies and Interests</em></h2>
 				<img src="images/colorado.jpg" alt="Colorado Stock Image" style="width: 400px;"/>
-				<ul>
-					<li>Favorite Destinations</li>
-					<ol>
-						<li>Colorado</li>
-						<li>Florida</li>
-						<li>South Dakota</li>
-					</ol>
-					<li>Favorite Movie Genres</li>
-					<ol>
-						<li>Horror/Thriller</li>
-						<li>Comedy</li>
-						<li>Action/Adventure</li>
-					</ol>
-				</ul>
-				
-				<ul>
-					<li>Favorite Foods</li>
+				<div class="right-content">
 					<ul>
-						<li>Pizza</li>
-						<li>Tacos</li>
-						<li>Fried Chicken</li>
+						<li>Favorite Destinations</li>
+						<ol>
+							<li>Colorado</li>
+							<li>Florida</li>
+							<li>South Dakota</li>
+						</ol>
+						<li>Favorite Movie Genres</li>
+						<ol>
+							<li>Horror/Thriller</li>
+							<li>Comedy</li>
+							<li>Action/Adventure</li>
+						</ol>
 					</ul>
-					<li>Favorite Musical Artists</li>
+					
 					<ul>
-						<li>Radiohead</li>
-						<li>Kanye West</li>
-						<li>Pink Floyd</li>
+						<li>Favorite Foods</li>
+						<ul>
+							<li>Pizza</li>
+							<li>Tacos</li>
+							<li>Fried Chicken</li>
+						</ul>
+						<li>Favorite Musical Artists</li>
+						<ul>
+							<li>Radiohead</li>
+							<li>Kanye West</li>
+							<li>Pink Floyd</li>
+						</ul>
 					</ul>
-				</ul>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 		</section>
 		
 		<footer>
-			<hr/>
 			<p>&copy; 2020 Tanner Thelen. All rights reserved.</p>
 		</footer>
 	</body>

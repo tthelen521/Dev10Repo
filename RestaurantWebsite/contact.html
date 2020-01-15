@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<title>Contact Us</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			.required {
+				font-weight:bold;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -14,16 +21,16 @@
 		
 		<form action="submit.html" method="POST">
 	
-		<label for="name">Name:</label>
+		<label class="required" for="name">Name:</label>
 		<input type="text" id="name" name="name"> <br/>
 	
-		<label for="email">Email:</label>
+		<label class="required" for="email">Email:</label>
 		<input type="text" id="email" name="email"> <br/>
 	
-		<label for="phone">Phone:</label>
+		<label class="required" for="phone">Phone:</label>
 		<input type="text" id="phone" name="phone"> <br/>
 		
-		<label for="contact">Reason for Inquiry:</label>
+		<label class="required" for="contact">Reason for Inquiry:</label>
 		<select id="contact" name="contact">
 			<option value="catering" selected>Catering</option>
 			<option value="private-party">Private Party</option>
@@ -35,7 +42,7 @@
 		<textarea id="info" name="info"></textarea> <br/>
 		
 		<fieldset>
-			<legend>Have you been to the restaurant?</legend>
+			<legend class="required">Have you been to the restaurant?</legend>
 			<input type="radio" id="choice1" name="questionnaire" value="no" checked>
 			<label for="choice1">No</label>
 			<input type="radio" id="choice2" name="questionnaire" value="yes">
@@ -43,7 +50,7 @@
 		</fieldset> </br>
 		
 		<fieldset>
-		<legend>Best days to contact you:</legend>
+		<legend class="required">Best days to contact you:</legend>
 			<input type="checkbox" id="monday" name="day" value="monday">
 			<label for="monday">M</label>
 			<input type="checkbox" id="tuesday" name="day" value="tuesday">

@@ -1,0 +1,22 @@
+/*
+Creator: Tanner Thelen
+Date created: 1/14/2020
+Date last modified: 1/14/2020
+*/
+
+h1 {
+	font-family: arial, helvetica, sans-serif;
+}
+nav a:visited{
+	color:darkviolet;
+}
+nav a:hover{
+	font-weight:bold;
+}
+nav a:active{
+	text-decoration: none;
+}
+
+h1, footer {
+
+}
