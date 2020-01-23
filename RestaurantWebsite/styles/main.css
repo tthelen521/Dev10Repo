@@ -10,13 +10,21 @@ h1 {
 nav a:visited{
 	color:darkviolet;
 }
-nav a:hover{
-	font-weight:bold;
-}
+
 nav a:active{
 	text-decoration: none;
 }
 
-h1, footer {
-
+nav {
+	border-top: thin #DEB887 solid;
+	border-bottom: thin #DEB887 solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+nav .btn {
+	background-color: #DEB887;
+	color: #fef9ff;
+}
+nav .btn:hover {
+	font-weight: bold;
 }
